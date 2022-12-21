@@ -1,20 +1,60 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body>
 
+<body>
+    <!--Navigation Bar-->
+    <div class="navigation_bar">
+        <div>
+            <div class="shortcut_container">
+
+                <a href="#title">
+                    <div class="shortcut"></div>
+                </a>
+                <a href="#description">
+                    <div class="shortcut"></div>
+                </a>
+                <a href="#team-web">
+                    <div class="shortcut"></div>
+                </a>
+                <a href="#team-robot">
+                    <div class="shortcut"></div>
+                </a>
+                <a href="#team-game">
+                    <div class="shortcut"></div>
+                </a>
+                <a href="#team-security">
+                    <div class="shortcut"></div>
+                </a>
+                <a href="#team-software">
+                    <div class="shortcut"></div>
+                </a>
+                <a href="#roadmap">
+                    <div class="shortcut"></div>
+                </a>
+            </div>
+            <div>
+                <div class="shortcut_viewer">TITLE</div>
+            </div>
+        </div>
+    </div>
+    <!--Main-->
     <div id="p1-title" class="page">
+        <a name="title"></a>
         <div class="main">
             <h1 id="head-h1">POS</h1>
             <h2 id="head-h2">Programing<br>Of<br>Soul</h2>
         </div>
     </div>
+    <div class="yeoback"></div>
     <div id="p2-dcr" class="page">
+        <a name="description"></a>
         <div id="main1-main" class="main">
             POS는 서령고등학교의 프로그래밍 동아리입니다.<br><br>
             개발 분야에 따라 5개의 팀이 나눠져 있고,<br>
@@ -23,15 +63,18 @@
             팀 별로 소개하고 있습니다.
         </div>
     </div>
-    <div id="p3-web" class="page">
+    <div id="p3-team-web" class="page">
+        <a name="team-web"></a>
         <div class="main">
             <h2 class="ph2">Team : Web</h2>
             <img class="intimg" src="img/임시웹.png">
             <h2 class="mh2">What is POS</h2>
-            <div class="mdiv">저희 웹 팀에서는 POS를 소개하는<br>웹페이지를 만들었습니다.<br>POS에 대한 간단한 설명, 각 팀의 프로젝트를<br>간단하게 소개하고 있습니다.</div>
+            <div class="mdiv">저희 웹 팀에서는 POS를 소개하는<br>웹페이지를 만들었습니다.<br>POS에 대한 간단한 설명, 각 팀의 프로젝트를<br>간단하게 소개하고 있습니다.
+            </div>
         </div>
     </div>
-    <div id="p4-rob" class="page">
+    <div id="p4-team-robot" class="page">
+        <a name="team-robot"></a>
         <div class="main">
             <h2 class="ph2">Team : Robot</h2>
             <img class="intimg" src="img/임시로봇.png">
@@ -39,7 +82,8 @@
             <div class="mdiv">로봇팀에서는 로봇을 이용한 도전을 만들었습니다.<br>로봇을 이용해 여러 장애물을 통과하는 챌린지입니다.</div>
         </div>
     </div>
-    <div id="p5-game" class="page">
+    <div id="p5-team-game" class="page">
+        <a name="team-game"></a>
         <div class="main">
             <h2 class="ph2">Team : Game</h2>
             <img class="intimg" src="img/임시게임.png">
@@ -47,7 +91,8 @@
             <div class="mdiv">대충게임프로젝트입니다.<br>대충게임프로젝트입니다.</div>
         </div>
     </div>
-    <div id="p6-sec" class="page">
+    <div id="p6-team-security" class="page">
+        <a name="team-security"></a>
         <div class="main">
             <h2 class="ph2">Team : Security</h2>
             <img class="intimg" src="img/임시보안.png">
@@ -55,19 +100,23 @@
             <div class="mdiv">지금 사용하시는 비밀번호가 불안하신가요?<br>우리가 만든 시스템에 비밀번호를 입력하면<br>더욱 강력한 비밀번호를 추천해드립니다.</div>
         </div>
     </div>
-    <div id="p7-pure" class="page">
+    <div id="p7-team-software" class="page">
+        <a name="team-software"></a>
         <div class="main">
-            <h2 class="ph2">Team : Pure Programing</h2>
+            <h2 class="ph2">Team : Software</h2>
             <img class="intimg" src="img/임시순수.png">
             <h2 class="mh2">인공지능 챗봇</h2>
             <div class="mdiv">요새 대세인 인공지능과 대화 한번 해보실래요?<br>저희 팀에서는 인공지능을 이용한<br>챗봇을 만들었습니다.</div>
         </div>
     </div>
-    <div id="p8-footer" class="page">
+    <div id="p8-roadmap" class="page">
+        <a name="roadmap"></a>
         <div class="main">
             <h1 id="footer-h1">오시는 길</h1>
             <img id="map" src="img/임시지도.png">
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

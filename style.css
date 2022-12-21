@@ -1,72 +1,127 @@
-body
-{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     height: 100vh;
     width: 100%;
     margin: 0px;
-    background-color: #0e0f37;
+    background-color: #1b213a;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
-.hidden
-{
+
+.hidden {
     display: none;
 }
-.page
-{
+
+.page {
     height: 100vh;
     width: 100%;
     text-align: center;
 }
-.main
-{
+
+.content {
+    height: 80vh;
+}
+
+.main {
     position: relative;
     top: 50%;
     left: 0%;
-    transform: translate(0%, -50%); 
+    transform: translate(0%, -50%);
 }
-.intimg
-{
-    height: 30vh;
-    width: 30vh;
+
+.intimg {
+    height: 35vh;
+    width: 35vh;
 }
 
 /*p1*/
-#head-h1
-{
+#head-h1 {
     margin: 0px;
-    font-size: 15vh;
+    font-size: 20vh;
+    font-family: 'Noto Serif Khmer', serif;
 }
-#head-h2
-{
-    font-size: 5vh;
-    color: #a0a0a0;
-}
-/*p2*/
-#main1-main
-{
-    font-size: 2.2vh;
-    font-weight: 550;
-}
-/*p3*/
-.ph2
-{
-    font-size: 6.5vh;
-}
-.mh2
-{
-    font-size: 4vh;
-}
-.mdiv
-{
+
+#head-h2 {
     font-size: 2vh;
+    color: #a0a0a0;
+    text-align: center;
+    line-height: 2.5vh;
+    font-family: 'Varela Round', sans-serif;
 }
+
+.yeoback {
+    height: 10vh;
+}
+
+/*p2*/
+#main1-main {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 2.2vh;
+}
+
+/*p3*/
+.ph2 {
+    font-family: 'Play', sans-serif;
+    font-size: 7vh;
+    margin-bottom: 3vh;
+}
+
+.mh2{
+    font-size: 2.5vh;
+    letter-spacing: 0.5vh;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.mdiv{
+    font-size: 1.7vh;
+    letter-spacing: 0.2vh;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
 /*p4*/
-#map
-{
-    height: 40vh;
-    width: 40vh;
+#map {
+    height: 50vh;
+    width: 50vh;
 }
-#footer-h1
-{
-    font-size: 5vh;
+
+.navigation_bar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 10px;
+}
+
+.shortcut_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.shortcut {
+    width: 1.5vh;
+    height: 1.5vh;
+    margin-left: 10px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+.shortcut_viewer {
+    font-family: 'Teko', sans-serif;
+    user-select: none;
+    margin-top: 10px;
+    letter-spacing: 0.3vh;
+    font-size: 3.5vh;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-align: center;
 }
