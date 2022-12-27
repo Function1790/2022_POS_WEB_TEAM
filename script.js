@@ -2,6 +2,9 @@ const nav_shortcuts = document.getElementsByClassName("shortcut")
 const nav_shortcut_viwer = document.getElementsByClassName("shortcut_viewer")[0]
 const body = document.getElementsByTagName("body")[0]
 const next_index_follower_a = document.getElementById("next-index-follower-a")
+const head_h1 = document.getElementById("head-h1")
+const head_h2 = document.getElementById("head-h2")
+const image_game = document.getElementById("image-game")
 const viwer_disapper_count = 5
 
 const print = (t) => console.log(t)
@@ -46,14 +49,27 @@ function chanageBackgroundColorByScroll() {
     body.style.backgroundColor = `rgb(${14 + a},${15 + a},${55 + a})`
 }
 
+let game_index = 0
+let render_frame = 0
+
 function render() {
     nav_shortcut_viwer.style.color = `rgba(255,255,255,${shortcut_viewer_brightness})`
 
+    //game image
+    if (render_frame % 300 == 0) {
+        image_game.src = `./img/Game0${game_index % 4 + 1}.png`
+        game_index++
+    }
 
     shortcut_viewer_brightness -= 0.01
+    render_frame++
     requestAnimationFrame(render)
 }
 render()
+
+function sleep(t) {
+    return new Promise(resolve => setTimeout(resolve, t));
+}
 
 //Event Function
 
@@ -109,3 +125,24 @@ document.addEventListener('scroll', e => {
         nav_shortcuts[page_num + 1].className = "shortcut"
     }
 })
+
+window.onload = (e) => {
+    //logo
+    const _logo = "POS"
+    const _description = "Programing_Of_Soul"
+    head_h1.innerText = "";
+    head_h2.innerText = "";
+    (async function () {
+        await sleep(1000)
+        for (var i = 0; i < _logo.length; i++) {
+            await sleep(100)
+            head_h1.innerText = _logo.slice(0, i + 1)
+        }
+        await sleep(1000)
+        print(`${_description.slice(0, 18).replaceAll("_", "br")}`)
+        for (var i = 0; i < _description.length; i++) {
+            await sleep(100)
+            head_h2.innerHTML = _description.slice(0, i + 1).replaceAll("_", "<br/>")
+        }
+    })()
+}

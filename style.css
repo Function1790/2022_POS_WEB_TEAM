@@ -8,16 +8,18 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
-    margin: 0;
 }
 
 body {
     height: 100%;
-    margin: 0;
     width: 100%;
     background-color: #0e0f37;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
 }
 
 .hidden {
@@ -37,9 +39,35 @@ body {
     transform: translate(0%, -50%);
 }
 
+/*Image*/
 .intimg {
     height: 30vh;
     width: 30vh;
+}
+
+.slideimg {
+    height: 30vh;
+    width: 40vh;
+}
+
+image {
+    object-fit: fill;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.flex>.mh2 {
+    padding-top: 50px;
+    padding-left: 5px;
+    margin: 0px;
+}
+
+.flex>.ph2 {
+    margin: 0px;
 }
 
 /*p1*/
@@ -63,12 +91,16 @@ body {
 
 /*p3*/
 .ph2 {
+    letter-spacing: 0.2vh;
     font-size: 6.5vh;
+    margin-bottom: 4vh;
 }
 
 .mh2 {
     font-size: 4vh;
     font-family: 'Do Hyeon', sans-serif;
+    margin-bottom: 1vh;
+    margin-top: 2.5vh;
 }
 
 .mdiv {
@@ -77,14 +109,7 @@ body {
 }
 
 /*p4*/
-#map {
-    height: 40vh;
-    width: 40vh;
-}
 
-#footer-h1 {
-    font-size: 5vh;
-}
 
 .navigation_bar {
     position: fixed;
@@ -94,7 +119,7 @@ body {
     padding: 10px;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.521);
 }
@@ -134,7 +159,7 @@ a{
 .shortcut {
     width: 5vw;
     height: 5vw;
-    margin-left: 10px;
+    margin-left: 20px;
     border: 4px solid rgb(255, 255, 255);
     border-radius: 100%;
 }
@@ -157,9 +182,14 @@ a{
     height: 100vh;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1000px) {
     .shortcut {
         width: 2.5vw;
         height: 2.5vw;
+    }
+
+    .flex>.mh2 {
+        padding-top: 22px;
+        padding-left: 5px;
     }
 }
