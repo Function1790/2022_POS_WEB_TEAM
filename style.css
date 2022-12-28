@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -16,6 +11,11 @@ body {
     background-color: #0e0f37;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 * {
@@ -77,6 +77,12 @@ image {
     font-size: 15vh;
 }
 
+#map-h1 {
+    user-select: none;
+    margin: 0px;
+    font-size: 10vh;
+}
+
 #head-h2 {
     user-select: none;
     font-size: 3vh;
@@ -98,17 +104,22 @@ image {
 
 .mh2 {
     font-size: 4vh;
-    font-family: 'Do Hyeon', sans-serif;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
     margin-top: 2.5vh;
 }
 
 .mdiv {
     font-size: 2vh;
-    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 /*p4*/
+
+#map {
+    height: 40vh;
+    width: 40vh;
+    margin-top: 30px;
+    border: white 2px solid;
+}
 
 
 .navigation_bar {
@@ -191,5 +202,52 @@ a {
     .flex>.mh2 {
         padding-top: 22px;
         padding-left: 5px;
+    }
+
+    #head-h1 {
+        font-size: 20vh;
+    }
+
+    #head-h2 {
+        font-size: 7vh;
+    }
+
+    #main1-main {
+        font-size: 4vh;
+        font-weight: 550;
+    }
+
+    #map-h1 {
+        font-size: 15vh;
+    }
+
+    #map {
+        height: 50vh;
+        width: 50vh;
+    }
+
+    .ph2 {
+        letter-spacing: 0.2vh;
+        font-size: 8vh;
+        margin-bottom: 4vh;
+    }
+
+    .mh2 {
+        font-size: 5vh;
+    }
+
+    .intimg {
+        height: 45vh;
+        width: 45vh;
+    }
+
+    .slideimg {
+        height: 45vh;
+        width: 60vh;
+    }
+
+    .mdiv {
+        font-size: 3vh;
+        font-weight: 400;
     }
 }

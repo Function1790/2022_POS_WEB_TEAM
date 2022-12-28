@@ -44,9 +44,8 @@ nav_shortcut_viwer.addEventListener("mouseenter", () => {
 
 
 //Function
-function chanageBackgroundColorByScroll() {
+function changeByScroll() {
     let a = window.scrollY / HEIGHT * 50
-    body.style.backgroundColor = `rgb(${14 + a},${15 + a},${55 + a})`
 }
 
 let game_index = 0
@@ -107,7 +106,7 @@ next_index_follower_a.addEventListener("mousedown", (e) => {
 
 //Scroll
 document.addEventListener('scroll', e => {
-    chanageBackgroundColorByScroll()
+    changeByScroll()
 
     let page_num = Math.round(window.scrollY / window.innerHeight - 0.2)
     shortcut_viewer_brightness = viwer_disapper_count
